@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --base-font-size: 16px;
+}
+
+/* Dark mode via class */
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+}
+
+/* Also support system preference when no class is set */
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark):not(:has(.dark)) {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--base-font-size);
+  transition: background-color 0.2s ease, color 0.2s ease, font-size 0.2s ease;
+}
