@@ -156,3 +156,5 @@ Ensure your MongoDB URI is correct and accessible. For MongoDB Atlas, check your
 - `npm start` - Start production server
 - `npm test` - Run tests
 - `npm run lint` - Run ESLint
+
+env reference - https://docs.google.com/document/d/16LX65Y0BYl_mSQRV_atNgNogblrw5fYhlGMV8P6tLCA/edit?usp=sharing 
